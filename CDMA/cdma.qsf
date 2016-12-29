@@ -1,0 +1,100 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+# Date created = 10:43:16  April 29, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		cdma_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX150DF31C7
+set_global_assignment -name TOP_LEVEL_ENTITY cdma_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:43:16  APRIL 29, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name VERILOG_FILE VGA_Controller.v
+set_global_assignment -name VERILOG_FILE Signal_generator.v
+set_global_assignment -name VERILOG_FILE oscilloscope.v
+set_global_assignment -name VERILOG_FILE cdma_top.v
+set_global_assignment -name VERILOG_FILE cdma.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SDC_FILE cdma_top.sdc
+set_location_assignment PIN_AJ16 -to CLOCK_50
+set_location_assignment PIN_R29 -to data[0]
+set_location_assignment PIN_P30 -to data[1]
+set_location_assignment PIN_R30 -to data[2]
+set_location_assignment PIN_T28 -to data[3]
+set_location_assignment PIN_F26 -to data_rec[1]
+set_location_assignment PIN_AA25 -to data_rec1[1]
+set_location_assignment PIN_C22 -to VGA_B[7]
+set_location_assignment PIN_G25 -to VGA_B[6]
+set_location_assignment PIN_A23 -to VGA_B[5]
+set_location_assignment PIN_F24 -to VGA_B[4]
+set_location_assignment PIN_C23 -to VGA_B[3]
+set_location_assignment PIN_B25 -to VGA_B[2]
+set_location_assignment PIN_C24 -to VGA_B[1]
+set_location_assignment PIN_E24 -to VGA_B[0]
+set_location_assignment PIN_F25 -to VGA_BLANK_n
+set_location_assignment PIN_D27 -to VGA_CLK
+set_location_assignment PIN_B22 -to VGA_G[7]
+set_location_assignment PIN_A22 -to VGA_G[6]
+set_location_assignment PIN_F21 -to VGA_G[5]
+set_location_assignment PIN_A21 -to VGA_G[4]
+set_location_assignment PIN_K19 -to VGA_G[3]
+set_location_assignment PIN_A20 -to VGA_G[2]
+set_location_assignment PIN_C20 -to VGA_G[1]
+set_location_assignment PIN_D20 -to VGA_G[0]
+set_location_assignment PIN_B24 -to VGA_HS
+set_location_assignment PIN_C19 -to VGA_R[7]
+set_location_assignment PIN_B19 -to VGA_R[6]
+set_location_assignment PIN_E19 -to VGA_R[5]
+set_location_assignment PIN_E18 -to VGA_R[4]
+set_location_assignment PIN_A18 -to VGA_R[3]
+set_location_assignment PIN_B18 -to VGA_R[2]
+set_location_assignment PIN_C18 -to VGA_R[1]
+set_location_assignment PIN_A17 -to VGA_R[0]
+set_location_assignment PIN_A24 -to VGA_VS
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
